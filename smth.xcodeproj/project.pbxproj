@@ -17,6 +17,9 @@
 		7131D7F51E3907E2003BA781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7131D7F31E3907E2003BA781 /* LaunchScreen.storyboard */; };
 		7131D8001E3907E2003BA781 /* smthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131D7FF1E3907E2003BA781 /* smthTests.swift */; };
 		7131D80B1E3907E2003BA781 /* smthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131D80A1E3907E2003BA781 /* smthUITests.swift */; };
+		7131D8191E390C4C003BA781 /* BackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131D8181E390C4C003BA781 /* BackgroundNode.swift */; };
+		7131D81B1E3918A7003BA781 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131D81A1E3918A7003BA781 /* Constants.swift */; };
+		7131D81D1E391FAA003BA781 /* UmbrellaSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131D81C1E391FAA003BA781 /* UmbrellaSprite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		7131D8061E3907E2003BA781 /* smthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7131D80A1E3907E2003BA781 /* smthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smthUITests.swift; sourceTree = "<group>"; };
 		7131D80C1E3907E2003BA781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7131D8181E390C4C003BA781 /* BackgroundNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundNode.swift; sourceTree = "<group>"; };
+		7131D81A1E3918A7003BA781 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7131D81C1E391FAA003BA781 /* UmbrellaSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UmbrellaSprite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +115,12 @@
 				7131D7EA1E3907E2003BA781 /* GameScene.swift */,
 				7131D7EC1E3907E2003BA781 /* GameViewController.swift */,
 				7131D7EE1E3907E2003BA781 /* Main.storyboard */,
+				7131D8181E390C4C003BA781 /* BackgroundNode.swift */,
 				7131D7F11E3907E2003BA781 /* Assets.xcassets */,
 				7131D7F31E3907E2003BA781 /* LaunchScreen.storyboard */,
 				7131D7F61E3907E2003BA781 /* Info.plist */,
+				7131D81A1E3918A7003BA781 /* Constants.swift */,
+				7131D81C1E391FAA003BA781 /* UmbrellaSprite.swift */,
 			);
 			path = smth;
 			sourceTree = "<group>";
@@ -202,6 +211,7 @@
 				TargetAttributes = {
 					7131D7E01E3907E1003BA781 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2UKYL846YD;
 						ProvisioningStyle = Automatic;
 					};
 					7131D7FA1E3907E2003BA781 = {
@@ -270,7 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7131D81D1E391FAA003BA781 /* UmbrellaSprite.swift in Sources */,
+				7131D81B1E3918A7003BA781 /* Constants.swift in Sources */,
 				7131D7EB1E3907E2003BA781 /* GameScene.swift in Sources */,
+				7131D8191E390C4C003BA781 /* BackgroundNode.swift in Sources */,
 				7131D7ED1E3907E2003BA781 /* GameViewController.swift in Sources */,
 				7131D7E51E3907E2003BA781 /* AppDelegate.swift in Sources */,
 			);
@@ -422,11 +435,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UKYL846YD;
 				INFOPLIST_FILE = smth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wwpf.smth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -434,11 +450,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UKYL846YD;
 				INFOPLIST_FILE = smth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wwpf.smth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
