@@ -9,6 +9,7 @@ public class BackgroundNode : SKNode {
         let startPoint = CGPoint(x: 0, y: yPos)
         let endPoint = CGPoint(x: size.width, y: yPos)
         
+        //this defined area(line) will interact with other physics bodies
         physicsBody = SKPhysicsBody(edgeFrom: startPoint, to: endPoint)
         physicsBody?.restitution = 0.3 //  bouncy the floor
         

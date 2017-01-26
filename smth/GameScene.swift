@@ -96,6 +96,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // Update the Spawn Timer
         currentRainDropSpawnTime += dt
         
+        // This will spawn a raindrop every time the accumulated delta time is greater than rainDropSpawnRate
         if currentRainDropSpawnTime > rainDropSpawnRate {
             currentRainDropSpawnTime = 0
             spawnRaindrop()
@@ -110,21 +111,26 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     private func spawnRaindrop() {
+        
         let raindrop = SKSpriteNode(texture: raindropTexture)  // create a raindrop using the raindropTexture
         raindrop.physicsBody = SKPhysicsBody(texture: raindropTexture, size: raindrop.size)
+        
+        // The categoryBitMask property is a number defining the type of object this is for considering collisions
         raindrop.physicsBody?.categoryBitMask = RainDropCategory
+        // The contactTestBitMask property is a number defining which collisions we want to be notified about
         raindrop.physicsBody?.contactTestBitMask = FloorCategory | WorldCategory
+        
         raindrop.physicsBody?.density = 0.5
         
         
-        
-        let xPosition =
-            CGFloat(arc4random()).truncatingRemainder(dividingBy: size.width)
+        // make sure it is on screen with truncatingRemainder method
+        let xPosition = CGFloat(arc4random()).truncatingRemainder(dividingBy: size.width)
         let yPosition = size.height + raindrop.size.height
         
         raindrop.position = CGPoint(x: xPosition, y: yPosition)
    
         raindrop.zPosition = 2
+        
         addChild(raindrop)
     }
     
