@@ -20,6 +20,8 @@
 		7131D8191E390C4C003BA781 /* BackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131D8181E390C4C003BA781 /* BackgroundNode.swift */; };
 		7131D81B1E3918A7003BA781 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131D81A1E3918A7003BA781 /* Constants.swift */; };
 		7131D81D1E391FAA003BA781 /* UmbrellaSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131D81C1E391FAA003BA781 /* UmbrellaSprite.swift */; };
+		7131D81F1E394D14003BA781 /* CatSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131D81E1E394D14003BA781 /* CatSprite.swift */; };
+		7131D8211E39646A003BA781 /* FoodSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7131D8201E39646A003BA781 /* FoodSprite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		7131D8181E390C4C003BA781 /* BackgroundNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundNode.swift; sourceTree = "<group>"; };
 		7131D81A1E3918A7003BA781 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7131D81C1E391FAA003BA781 /* UmbrellaSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UmbrellaSprite.swift; sourceTree = "<group>"; };
+		7131D81E1E394D14003BA781 /* CatSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatSprite.swift; sourceTree = "<group>"; };
+		7131D8201E39646A003BA781 /* FoodSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodSprite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				7131D7F61E3907E2003BA781 /* Info.plist */,
 				7131D81A1E3918A7003BA781 /* Constants.swift */,
 				7131D81C1E391FAA003BA781 /* UmbrellaSprite.swift */,
+				7131D81E1E394D14003BA781 /* CatSprite.swift */,
+				7131D8201E39646A003BA781 /* FoodSprite.swift */,
 			);
 			path = smth;
 			sourceTree = "<group>";
@@ -281,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7131D81D1E391FAA003BA781 /* UmbrellaSprite.swift in Sources */,
+				7131D81F1E394D14003BA781 /* CatSprite.swift in Sources */,
+				7131D8211E39646A003BA781 /* FoodSprite.swift in Sources */,
 				7131D81B1E3918A7003BA781 /* Constants.swift in Sources */,
 				7131D7EB1E3907E2003BA781 /* GameScene.swift in Sources */,
 				7131D8191E390C4C003BA781 /* BackgroundNode.swift in Sources */,
